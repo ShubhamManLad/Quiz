@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/score_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Score : 0"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/count_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_textView"
+        android:paddingBottom="16dp"
+        android:text="Question : 1/n"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/category_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count_textView"
+        android:paddingBottom="16dp"
+        android:text="Category : Unknown"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/difficulty_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_textView"
+        android:paddingBottom="16dp"
+        android:text="Difficulty : Unknown"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/timer_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00:30"
+        android:textSize="32sp"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/question_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:padding="16dp"
+        android:text="Question: This is an Sample Question"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:freezesText="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/option1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:freezesText="true" />
+
+        <RadioButton
+            android:id="@+id/option2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:freezesText="true" />
+
+        <RadioButton
+            android:id="@+id/option3_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:freezesText="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/solution_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:padding="16dp"
+        android:text="Solution: This is an Sample Solution"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:freezesText="true" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="241dp"
+        android:text="Confirm"
+        android:freezesText="true" />
+
+</RelativeLayout>
+
